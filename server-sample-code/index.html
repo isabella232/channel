@@ -1,0 +1,501 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/channel/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/channel/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/channel/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Unity, IAP, UnityChannel, XIAOMI" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/channel/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Server Sample Code">
+<meta property="og:url" content="https://unitytech.github.io/channel/server-sample-code/index.html">
+<meta property="og:site_name" content="Unity SDK for XIAOMI (IAP + Ads)">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:updated_time" content="2017-05-02T08:11:16.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Server Sample Code">
+<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/channel/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://unitytech.github.io/channel/server-sample-code/"/>
+
+
+
+
+
+  <title>
+  
+
+  
+    Server Sample Code | Unity SDK for XIAOMI (IAP + Ads)
+  
+</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90587889-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/channel/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Unity SDK for XIAOMI (IAP + Ads)</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/channel/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-builds">
+          <a href="/channel/builds" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Builds
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline">Server Sample Code</h1>
+
+
+
+</header>
+
+    
+    
+      <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.io.IOException;</div><div class="line"><span class="keyword">import</span> java.io.InputStream;</div><div class="line"><span class="keyword">import</span> java.io.UnsupportedEncodingException;</div><div class="line"><span class="keyword">import</span> java.net.MalformedURLException;</div><div class="line"><span class="keyword">import</span> java.net.URL;</div><div class="line"><span class="keyword">import</span> java.net.URLConnection;</div><div class="line"><span class="keyword">import</span> java.net.URLDecoder;</div><div class="line"><span class="keyword">import</span> java.net.URLEncoder;</div><div class="line"><span class="keyword">import</span> java.security.InvalidKeyException;</div><div class="line"><span class="keyword">import</span> java.security.KeyFactory;</div><div class="line"><span class="keyword">import</span> java.security.MessageDigest;</div><div class="line"><span class="keyword">import</span> java.security.NoSuchAlgorithmException;</div><div class="line"><span class="keyword">import</span> java.security.PublicKey;</div><div class="line"><span class="keyword">import</span> java.security.Signature;</div><div class="line"><span class="keyword">import</span> java.security.SignatureException;</div><div class="line"><span class="keyword">import</span> java.security.spec.InvalidKeySpecException;</div><div class="line"><span class="keyword">import</span> java.security.spec.X509EncodedKeySpec;</div><div class="line"><span class="keyword">import</span> java.util.Base64;</div><div class="line"><span class="keyword">import</span> java.util.HashMap;</div><div class="line"><span class="keyword">import</span> java.util.Map;</div><div class="line"><span class="keyword">import</span> java.util.Scanner;</div><div class="line"><span class="keyword">import</span> java.util.SortedSet;</div><div class="line"><span class="keyword">import</span> java.util.TreeSet;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ServerDemo</span> </span>&#123;</div><div class="line">	</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> String verifyLoginUrl = <span class="string">"https://cn-api.unity.com/v1/login-attempts/verifyLogin"</span>;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> String checkOrderUrl = <span class="string">"https://cn-api.unity.com/v1/order-attempts/query"</span>;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> String charset = <span class="string">"UTF-8"</span>;</div><div class="line">	</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> String clientSecret = <span class="string">"Your Unity Client Secret Here."</span>;</div><div class="line">	<span class="keyword">private</span> <span class="keyword">static</span> String RSAPublicKey = <span class="string">"Your Unity RSA Public Key Here."</span>;</div><div class="line">	</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</div><div class="line">		<span class="comment">// verify login sample</span></div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			String userLoginToken = <span class="string">"Please get user login token in UnityIAP SDK."</span>;</div><div class="line">			Map&lt;String, String&gt; parameters = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</div><div class="line">			parameters.put(<span class="string">"userLoginToken"</span>, userLoginToken);</div><div class="line">			String verifyLoginResponse = sendRequest(parameters, verifyLoginUrl);</div><div class="line">			System.out.println(verifyLoginResponse);</div><div class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		<span class="comment">// check order status sample</span></div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			String orderQueryToken = <span class="string">"Please get order query token in UnityIAP SDK."</span>;</div><div class="line">			Map&lt;String, String&gt; parameters = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</div><div class="line">			parameters.put(<span class="string">"cpOrderId"</span>, <span class="string">"Please get cpOrderId in UnityIAP SDK."</span>);</div><div class="line">			parameters.put(<span class="string">"clientId"</span>, <span class="string">"Your Unity Client Id Here."</span>);</div><div class="line">			parameters.put(<span class="string">"orderQueryToken"</span>, orderQueryToken);</div><div class="line">			String verifyLoginResponse = sendRequest(parameters, checkOrderUrl);</div><div class="line">			System.out.println(verifyLoginResponse);</div><div class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		<span class="comment">// RSA verify for callback sample</span></div><div class="line">		<span class="keyword">try</span> &#123;</div><div class="line">			String query = <span class="string">"callback query string (signData=...&amp;signature=...) from UnityIAP server"</span>;</div><div class="line">			String response = receiveCallback(query);</div><div class="line">			System.out.println(response);</div><div class="line">		&#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">			e.printStackTrace();</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">/** send request to UnityIAP server.</span></div><div class="line">	 * <span class="doctag">@param</span> parameters the query parameters</div><div class="line">	 * <span class="doctag">@param</span> url the UnityIAP api url</div><div class="line">	 * <span class="doctag">@return</span> api response</div><div class="line">	 * <span class="doctag">@throws</span> MalformedURLException</div><div class="line">	 * <span class="doctag">@throws</span> IOException</div><div class="line">	 */</div><div class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">sendRequest</span><span class="params">(Map&lt;String, String&gt; parameters, String url)</span> <span class="keyword">throws</span> MalformedURLException, IOException </span>&#123;</div><div class="line">		String ret = <span class="string">""</span>;</div><div class="line">		String signData = <span class="string">""</span>;</div><div class="line">		String query = <span class="string">""</span>;</div><div class="line">		<span class="comment">// sort parameters</span></div><div class="line">		SortedSet&lt;String&gt; keys = <span class="keyword">new</span> TreeSet&lt;String&gt;(parameters.keySet());</div><div class="line">		<span class="keyword">for</span> (String key : keys) &#123; </div><div class="line">		   String value = parameters.get(key);</div><div class="line">		   signData += value + <span class="string">"&amp;"</span>;</div><div class="line">		   query += key + <span class="string">"="</span> + URLEncoder.encode(value, charset) + <span class="string">"&amp;"</span>;</div><div class="line">		&#125;</div><div class="line">		signData += clientSecret;</div><div class="line">		<span class="comment">// sign parameters</span></div><div class="line">		String sign = md5Sign(signData);</div><div class="line">		query += <span class="string">"sign="</span> + sign;</div><div class="line">		</div><div class="line">		URLConnection connection = <span class="keyword">new</span> URL(url + <span class="string">"?"</span> + query).openConnection();</div><div class="line">		connection.setRequestProperty(<span class="string">"Accept-Charset"</span>, charset);</div><div class="line">		InputStream response = connection.getInputStream();</div><div class="line">		<span class="keyword">try</span> (Scanner scanner = <span class="keyword">new</span> Scanner(response)) &#123;</div><div class="line">		    String responseBody = scanner.useDelimiter(<span class="string">"\\A"</span>).next();</div><div class="line">		    ret += responseBody;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> ret;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">/** MD5 signature for given string</span></div><div class="line">	 * <span class="doctag">@param</span> signData the string to be signed</div><div class="line">	 * <span class="doctag">@return</span></div><div class="line">	 */</div><div class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">md5Sign</span><span class="params">(String signData)</span> </span>&#123;</div><div class="line">		String passwordHash = <span class="keyword">null</span>;</div><div class="line">        <span class="keyword">try</span> &#123;</div><div class="line">            MessageDigest md = MessageDigest.getInstance(<span class="string">"MD5"</span>);</div><div class="line">            <span class="keyword">byte</span>[] bytes = md.digest(signData.getBytes());</div><div class="line">            StringBuilder sb = <span class="keyword">new</span> StringBuilder();</div><div class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; bytes.length; i++) &#123;</div><div class="line">                sb.append(Integer.toString((bytes[i] &amp; <span class="number">0xff</span>) + <span class="number">0x100</span>, <span class="number">16</span>).substring(<span class="number">1</span>));</div><div class="line">            &#125;</div><div class="line">            passwordHash = sb.toString();</div><div class="line">        &#125; <span class="keyword">catch</span> (Exception e) &#123;</div><div class="line">            e.printStackTrace();</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> passwordHash;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">/** receive UnityIAP server's callback request</span></div><div class="line">	 * <span class="doctag">@param</span> query the request query string (signData=...&amp;signature=...)</div><div class="line">	 * <span class="doctag">@return</span> the response string ("ok" for success or others for failure)</div><div class="line">	 * <span class="doctag">@throws</span> UnsupportedEncodingException</div><div class="line">	 * <span class="doctag">@throws</span> InvalidKeyException</div><div class="line">	 * <span class="doctag">@throws</span> NoSuchAlgorithmException</div><div class="line">	 * <span class="doctag">@throws</span> InvalidKeySpecException</div><div class="line">	 * <span class="doctag">@throws</span> SignatureException</div><div class="line">	 */</div><div class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> String <span class="title">receiveCallback</span><span class="params">(String query)</span> <span class="keyword">throws</span> UnsupportedEncodingException, InvalidKeyException, NoSuchAlgorithmException, InvalidKeySpecException, SignatureException </span>&#123;</div><div class="line">		Map&lt;String, String&gt; parameters = <span class="keyword">new</span> HashMap&lt;String, String&gt;();</div><div class="line">	    <span class="keyword">for</span> (String param : query.split(<span class="string">"&amp;"</span>)) &#123;</div><div class="line">	        String pair[] = param.split(<span class="string">"="</span>);</div><div class="line">	        <span class="keyword">if</span> (pair.length&gt;<span class="number">1</span>) &#123;</div><div class="line">	        	String value = URLDecoder.decode(pair[<span class="number">1</span>], charset);</div><div class="line">	        	parameters.put(pair[<span class="number">0</span>], value);</div><div class="line">	        &#125;</div><div class="line">	    &#125;</div><div class="line">	    String signDataValue = parameters.get(<span class="string">"signData"</span>);</div><div class="line">	    String signValue = parameters.get(<span class="string">"signature"</span>);</div><div class="line">	    <span class="keyword">if</span> (signDataValue != <span class="keyword">null</span> &amp;&amp; signValue != <span class="keyword">null</span>) &#123;</div><div class="line">	    	<span class="keyword">if</span>(verifyRsa(signDataValue, signValue, RSAPublicKey)) &#123;</div><div class="line">	    		<span class="keyword">return</span> <span class="string">"ok"</span>;</div><div class="line">	    	&#125;</div><div class="line">	    &#125;</div><div class="line">	    <span class="keyword">return</span> <span class="string">"not ok"</span>;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	<span class="comment">/** verify the signData with signature by RSA</span></div><div class="line">	 * <span class="doctag">@param</span> signData signData string</div><div class="line">	 * <span class="doctag">@param</span> sign signature string</div><div class="line">	 * <span class="doctag">@param</span> key RSA public key</div><div class="line">	 * <span class="doctag">@return</span> true if verified successfully, otherwise false</div><div class="line">	 * <span class="doctag">@throws</span> NoSuchAlgorithmException</div><div class="line">	 * <span class="doctag">@throws</span> InvalidKeySpecException</div><div class="line">	 * <span class="doctag">@throws</span> InvalidKeyException</div><div class="line">	 * <span class="doctag">@throws</span> SignatureException</div><div class="line">	 */</div><div class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">boolean</span> <span class="title">verifyRsa</span><span class="params">(String signData, String sign, String key)</span> </span></div><div class="line">    <span class="keyword">throws</span> NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, SignatureException &#123;</div><div class="line">        <span class="keyword">byte</span>[] keyBytes = Base64.getDecoder().decode(key);</div><div class="line">        X509EncodedKeySpec pkcs8KeySpec = <span class="keyword">new</span> X509EncodedKeySpec(keyBytes);</div><div class="line">        KeyFactory fact = KeyFactory.getInstance(<span class="string">"RSA"</span>);</div><div class="line">        PublicKey pubKey = fact.generatePublic(pkcs8KeySpec);</div><div class="line">        Signature signature = Signature.getInstance(<span class="string">"SHA1WithRSA"</span>);</div><div class="line">        signature.initVerify(pubKey);</div><div class="line">        signature.update(signData.getBytes());</div><div class="line">        <span class="keyword">return</span> signature.verify(Base64.getDecoder().decode(sign));</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://pbs.twimg.com/profile_images/519835279431987201/1PbQpCce.jpeg"
+               alt="Unity Technology" />
+          <p class="site-author-name" itemprop="name">Unity Technology</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/channel/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/channel/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Unity Technology</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/channel/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/channel/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/channel/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/channel/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
