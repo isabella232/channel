@@ -328,8 +328,9 @@
 <li>Add an installer</li>
 <li>Fix man thread error seen in <code>Development Build</code></li>
 <li>(Unity 5.4+) Add error code to <code>IStoreListener.OnPurchaseFailed</code>, <code>PurchaseFailureReason.DuplicateTransaction</code>, when user repeats purchasing a non-consumable they already own</li>
-<li>A usage note for Customer Service: developers can use the <code>product.availableToPurchase</code> bool field to determine if a product is available from the Store’s Product Catalog. This field does not indicate ownership. Developers can use the <code>product.hasReceipt</code> bool immediately after purchasing to determine if a product is owned by the user, but this field will be reset to false when the user restarts the application; there is essentially no support for Product Inventory in Unity IAP.</li>
 </ul>
+<blockquote><p>A usage note for Customer Service: developers can use the <code>product.availableToPurchase</code> bool field to determine if a product is available from the Store’s Product Catalog. This field does not indicate ownership. Developers can use the <code>product.hasReceipt</code> bool immediately after purchasing to determine if a product is owned by the user, but this field will be reset to false when the user restarts the application; there is essentially no support for Product Inventory in Unity IAP.</p>
+</blockquote>
 <h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
 <li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4.unitypackage" title="Unity Package">Unity Package</a></li>
 <li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
