@@ -327,7 +327,7 @@
 <h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
 <li>Add an installer</li>
 <li>Fix man thread error seen in <code>Development Build</code></li>
-<li>(Unity 5.4+) Add error code to <code>IStoreListener.OnPurchaseFailed</code>, <code>PurchaseFailureReason.DuplicateTransaction</code>, when user repeats purchasing a non-consumable they already own</li>
+<li>(Unity 5.5+) Add error code to <code>IStoreListener.OnPurchaseFailed</code>, <code>PurchaseFailureReason.DuplicateTransaction</code>, when user repeats purchasing a non-consumable they already own</li>
 </ul>
 <blockquote><p>A usage note for Customer Service: developers can use the <code>product.availableToPurchase</code> bool field to determine if a product is available from the Store’s Product Catalog. This field does not indicate ownership. Developers can use the <code>product.hasReceipt</code> bool immediately after purchasing to determine if a product is owned by the user, but this field will be reset to false when the user restarts the application; there is essentially no support for Product Inventory in Unity IAP.</p>
 </blockquote>
