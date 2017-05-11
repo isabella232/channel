@@ -71,7 +71,7 @@
 <link href="/channel/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Unity, IAP, UnityChannel, XIAOMI" />
+  <meta name="keywords" content="alpha," />
 
 
 
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build. Changelog Add DEBUG mode!  Downloads Unity Package IAP Doc Ads">
-<meta name="keywords">
+<meta name="description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build. Changelog Add an installer Fix man thread error seen in Develop">
+<meta name="keywords" content="alpha">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3">
-<meta property="og:url" content="https://unitytech.github.io/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/index.html">
+<meta property="og:title" content="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4">
+<meta property="og:url" content="https://unitytech.github.io/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/index.html">
 <meta property="og:site_name" content="Unity SDK for XIAOMI (IAP + Ads)">
-<meta property="og:description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build. Changelog Add DEBUG mode!  Downloads Unity Package IAP Doc Ads">
-<meta property="og:updated_time" content="2017-05-11T03:13:05.000Z">
+<meta property="og:description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build. Changelog Add an installer Fix man thread error seen in Develop">
+<meta property="og:updated_time" content="2017-05-11T03:23:50.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3">
-<meta name="twitter:description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build. Changelog Add DEBUG mode!  Downloads Unity Package IAP Doc Ads">
+<meta name="twitter:title" content="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4">
+<meta name="twitter:description" content="Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build. Changelog Add an installer Fix man thread error seen in Develop">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="https://unitytech.github.io/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/"/>
+  <link rel="canonical" href="https://unitytech.github.io/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/"/>
 
 
 
 
 
-  <title> Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3 | Unity SDK for XIAOMI (IAP + Ads) </title>
+  <title> Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4 | Unity SDK for XIAOMI (IAP + Ads) </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -249,7 +249,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/">
+    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Unity Technology">
@@ -270,7 +270,7 @@
             
             
               
-                Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3
+                Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4
               
             
           </h1>
@@ -285,8 +285,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-05T11:04:35+08:00">
-                2017-05-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-11T11:09:28+08:00">
+                2017-05-11
               </time>
             
 
@@ -321,14 +321,17 @@
       
 
       
-        <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build.</p>
+        <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build.</p>
 <h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
-<li>Add DEBUG mode!</li>
+<li>Add an installer</li>
+<li>Fix man thread error seen in <code>Development Build</code></li>
+<li>(Unity 5.4+) Add error code to <code>IStoreListener.OnPurchaseFailed</code>, <code>PurchaseFailureReason.DuplicateTransaction</code>, when user repeats purchasing a non-consumable they already own</li>
+<li>A usage note for Customer Service: developers can use the <code>product.availableToPurchase</code> bool field to determine if a product is available from the Store’s Product Catalog. This field does not indicate ownership. Developers can use the <code>product.hasReceipt</code> bool immediately after purchasing to determine if a product is owned by the user, but this field will be reset to false when the user restarts the application; there is essentially no support for Product Inventory in Unity IAP.</li>
 </ul>
 <h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
-<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3.unitypackage" title="Unity Package">Unity Package</a></li>
-<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
-<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4.unitypackage" title="Unity Package">Unity Package</a></li>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
 </li>
 </ul>
 <h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
@@ -359,6 +362,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/channel/tags/alpha/" rel="tag"># alpha</a>
+          
+        </div>
+      
 
       
         
@@ -368,18 +377,14 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/" rel="next" title="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4">
-                <i class="fa fa-chevron-left"></i> Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/channel/2017/04/27/unity-sdk-for-xiaomi-alpha-v0.0.2/" rel="prev" title="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.2">
-                Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.2 <i class="fa fa-chevron-right"></i>
+              <a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/" rel="prev" title="Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3">
+                Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
