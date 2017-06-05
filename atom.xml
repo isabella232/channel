@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Unity SDK for XIAOMI (IAP + Ads)</title>
+  
+  <link href="/channel/atom.xml" rel="self"/>
+  
+  <link href="https://unitytech.github.io/channel/"/>
+  <updated>2017-06-05T07:11:18.000Z</updated>
+  <id>https://unitytech.github.io/channel/</id>
+  
+  <author>
+    <name>Unity Technology</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.7</title>
+    <link href="https://unitytech.github.io/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/"/>
+    <id>https://unitytech.github.io/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/</id>
+    <published>2017-06-05T06:46:26.000Z</published>
+    <updated>2017-06-05T07:11:18.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.7 build.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>Fix thread problem under Unity 5.3.</li>
+<li>Fix IAP Catalog hiding error sections in Product editor GUI</li>
+<li>Fix MiProductCatalog.prop not appearing after successfully generating (refresh)</li>
+<li>Catalog GUI supports expanding foldouts (headers) when clicking on foldout names to expand on Unity 5.5+. </li>
+<li>Show default label for new product instructing user to populate ID. </li>
+<li>More log details.</li>
+</ul>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7.unitypackage" title="Unity Package">Unity Package</a></li>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.7 build.&lt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.6</title>
+    <link href="https://unitytech.github.io/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/"/>
+    <id>https://unitytech.github.io/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/</id>
+    <published>2017-05-26T09:08:36.000Z</published>
+    <updated>2017-06-02T03:22:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.6 build.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>Support Unity 5.3 and 5.4 users discerning “repeat” purchases from real purchase failures with new <code>string IUnityChannelExtensions.GetLastPurchaseError()</code> API. See <code>IAPDemo.cs</code> for example.</li>
+<li>Use IAP Catalog for IAP metadata instead of returning 0.00 for price, and empty title &amp; description. </li>
+<li>Fix products reporting as ‘unavailable for purchase’ when Store ID Overrides was used for XiaomiMiPay.</li>
+<li>Add zh_CN to Locale list for Xiaomi. Can either use this locale as default or as translation with the (+) button to the right of Translation<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/Locale.png" alt="Locale.png" title=""></li>
+<li>Display Xiaomi MiPay Catalog export confirmation dialog when “Saved”.<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/Catalog.png" alt="Catalog.png" title=""></li>
+<li>Add Price Tiers for Xiaomi to IAP Catalog GUI (Price Tier 0 won’t work under debug mode).<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/PriceTier.png" alt="PriceTier.png" title="">
+</li>
+</ul>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6.unitypackage" title="Unity Package (Unity 5.4+)">Unity Package (Unity 5.4+)</a></li>
+<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6(Unity5.3).unitypackage" title="Unity Package (Unity 5.3+)">Unity Package (Unity 5.3+)</a>
+</li>
+</ul>
+<blockquote><p><code>Unity Package (Unity 5.4+)</code> works for Unity 5.4+ whether <code>Development Build</code> is toggled.<br><code>Unity Package (Unity 5.3+)</code> works for Unity 5.3+ but doesn’t work under <code>Development Build</code>.</p>
+</blockquote>
+<ul>
+<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.6 build.&lt;
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.5</title>
+    <link href="https://unitytech.github.io/channel/2017/05/22/unity-sdk-for-xiaomi-alpha-v0.0.5/"/>
+    <id>https://unitytech.github.io/channel/2017/05/22/unity-sdk-for-xiaomi-alpha-v0.0.5/</id>
+    <published>2017-05-22T06:06:04.000Z</published>
+    <updated>2017-05-22T06:10:15.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.5 build.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>The SDK now works on non-xiaomi devices!</li>
+</ul>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/05/22/unity-sdk-for-xiaomi-alpha-v0.0.5/unity-sdk-for-xiaomi-alpha-v0.0.5.unitypackage" title="Unity Package">Unity Package</a></li>
+<li><a href="/channel/2017/05/22/unity-sdk-for-xiaomi-alpha-v0.0.5/unity-sdk-for-xiaomi-alpha-v0.0.5-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/05/22/unity-sdk-for-xiaomi-alpha-v0.0.5/unity-sdk-for-xiaomi-alpha-v0.0.5-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.5 build.&lt;
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.4</title>
+    <link href="https://unitytech.github.io/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/"/>
+    <id>https://unitytech.github.io/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/</id>
+    <published>2017-05-11T03:09:28.000Z</published>
+    <updated>2017-05-11T07:53:44.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>Add an installer.</li>
+<li>Fix main thread error seen in <code>Development Build</code>.</li>
+<li>(Unity 5.5+) Add error code to <code>IStoreListener.OnPurchaseFailed</code>, <code>PurchaseFailureReason.DuplicateTransaction</code>, when user repeats purchasing a non-consumable they already own.</li>
+</ul>
+<blockquote><p>A usage note for Customer Service: developers can use the <code>product.availableToPurchase</code> bool field to determine if a product is available from the Store’s Product Catalog. This field does not indicate ownership. Developers can use the <code>product.hasReceipt</code> bool immediately after purchasing to determine if a product is owned by the user, but this field will be reset to false when the user restarts the application; there is essentially no support for Product Inventory in Unity IAP.</p>
+</blockquote>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4.unitypackage" title="Unity Package">Unity Package</a></li>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/05/11/unity-sdk-for-xiaomi-alpha-v0.0.4/unity-sdk-for-xiaomi-alpha-v0.0.4-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.4 build.&lt;
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.3</title>
+    <link href="https://unitytech.github.io/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/"/>
+    <id>https://unitytech.github.io/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/</id>
+    <published>2017-05-05T03:04:35.000Z</published>
+    <updated>2017-05-22T06:07:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>Add DEBUG mode!</li>
+</ul>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3.unitypackage" title="Unity Package">Unity Package</a></li>
+<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/05/05/unity-sdk-for-xiaomi-alpha-v0.0.3/unity-sdk-for-xiaomi-alpha-v0.0.3-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+</li>
+</ul>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.3 build.&lt;
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.2</title>
+    <link href="https://unitytech.github.io/channel/2017/04/27/unity-sdk-for-xiaomi-alpha-v0.0.2/"/>
+    <id>https://unitytech.github.io/channel/2017/04/27/unity-sdk-for-xiaomi-alpha-v0.0.2/</id>
+    <published>2017-04-27T02:52:26.000Z</published>
+    <updated>2017-05-09T03:34:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h4><ul>
+<li>A more stable version.</li>
+</ul>
+<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.2 build.</p>
+<p>You can download the the unity package <a href="https://github.com/UnityTech/channel/releases/download/v0.0.2/unity-sdk-for-xiaomi-alpha-v0.0.2.unitypackage" target="_blank" rel="external">here</a> and the docs can be found <a href="/channel/uploads/unity-sdk-for-xiaomi-iap-guide.pdf">here (IAP)</a> and <a href="/channel/uploads/unity-sdk-for-xiaomi-alpha-v0.0.2-ads-guide.pdf">here (Ads)</a>.</p>
+<p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Changelog&quot;&gt;&lt;a href=&quot;#Changelog&quot; class=&quot;headerlink&quot; title=&quot;Changelog&quot;&gt;&lt;/a&gt;Changelog&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;A more stable version.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.1</title>
+    <link href="https://unitytech.github.io/channel/2017/04/18/unity-sdk-for-xiaomi-alpha-v0.0.1/"/>
+    <id>https://unitytech.github.io/channel/2017/04/18/unity-sdk-for-xiaomi-alpha-v0.0.1/</id>
+    <published>2017-04-18T03:18:54.000Z</published>
+    <updated>2017-05-09T03:34:29.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.1 build.</p>
+<p>You can download the the unity package <a href="https://github.com/UnityTech/channel/releases/download/v0.0.1/unity-sdk-for-xiaomi-alpha-v0.0.1.unitypackage" target="_blank" rel="external">here</a> and the docs can be found <a href="/channel/uploads/unity-sdk-for-xiaomi-iap-guide.pdf">here (IAP)</a> and <a href="/channel/uploads/unity-sdk-for-xiaomi-alpha-v0.0.1-ads-guide.pdf">here (Ads)</a>.</p>
+<p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.1 build.&lt;
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
+  
+</feed>
