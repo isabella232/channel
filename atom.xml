@@ -5,7 +5,7 @@
   <link href="/channel/atom.xml" rel="self"/>
   
   <link href="https://unitytech.github.io/channel/"/>
-  <updated>2017-07-12T08:43:13.000Z</updated>
+  <updated>2017-07-17T10:09:13.000Z</updated>
   <id>https://unitytech.github.io/channel/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.14</title>
+    <link href="https://unitytech.github.io/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/"/>
+    <id>https://unitytech.github.io/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/</id>
+    <published>2017-07-17T06:46:26.000Z</published>
+    <updated>2017-07-17T10:09:13.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.14 build.<br>If UnityAds has been activated through Unity service window, you can delete the UnityAds folder in Assets.</p>
+<h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
+<li>Rename <code>Xiaomi Mi Pay</code> to <code>Xiaomi Mi Game Pay</code> on the editor GUI.</li>
+</ul>
+<h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
+<li><a href="/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/unity-sdk-for-xiaomi-alpha-v0.0.14.unitypackage" title="Unity Package">Unity Package</a> (Demo inlcuded)</li>
+<li><a href="/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/unity-sdk-for-xiaomi-alpha-v0.0.14-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/unity-sdk-for-xiaomi-alpha-v0.0.14-ads-guide.pdf" title="Ads Doc">Ads Doc</a> (UnityAds for Xiaomi is still in close beta, please contact <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> to get access if you are interested)</li>
+<li><a href="/channel/2017/07/17/unity-sdk-for-xiaomi-alpha-v0.0.14/stand-alone-xiaomi-sdk-alpha-v0.0.14.unitypackage" title="Stand-alone Xiaomi SDK UnityPackage">Stand-alone Xiaomi SDK UnityPackage</a></li>
+<li><a href="/channel/stand-alone-xiaomi-sdk-doc">Stand-alone Xiaomi SDK Doc</a></li>
+</ul>
+<blockquote><p>If developers only need to publish games to Xiaomi Store, stand-alone Xiaomi SDK can be used. Amazon, Google Play, CloudMoolah, and Samsung Galaxy Store are excluded.</p>
+<p>Please note that stand-alone Xiaomi SDK does not require Unity IAP to be activated, thus is not linked to Unity Analytics by default.</p>
+</blockquote>
+<h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>Please feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.14 build.
+    
+    </summary>
+    
+    
+      <category term="alpha" scheme="https://unitytech.github.io/channel/tags/alpha/"/>
+    
+  </entry>
   
   <entry>
     <title>Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.13</title>

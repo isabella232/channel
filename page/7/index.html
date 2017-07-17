@@ -248,7 +248,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/">
+    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Unity Technology">
@@ -270,8 +270,8 @@
             
               
                 
-                <a class="post-title-link" href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/" itemprop="url">
-                  Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.7
+                <a class="post-title-link" href="/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/" itemprop="url">
+                  Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.8
                 </a>
               
             
@@ -287,8 +287,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-05T14:46:26+08:00">
-                2017-06-05
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-09T14:46:26+08:00">
+                2017-06-09
               </time>
             
 
@@ -325,20 +325,23 @@
       
         
           
-            <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.7 build.</p>
-<p><span style="color:red"> When prompted to update Unity IAP, DO NOT update. </span></p>
+            <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.8 build.<br>If UnityAds has been activated through Unity service window, you can delete the UnityAds folder in Assets.<br><span style="color:red"> When prompted to update Unity IAP, DO NOT update. </span></p>
 <h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
-<li>Fix thread problem under Unity 5.3.</li>
-<li>Fix IAP Catalog hiding error sections in Product editor GUI.</li>
-<li>Fix MiProductCatalog.prop not appearing after successfully generating (refresh).</li>
-<li>Catalog GUI supports expanding foldouts (headers) when clicking on foldout names to expand on Unity 5.5+. </li>
-<li>Show default label for new product instructing user to populate ID. </li>
-<li>More log details.</li>
+<li>Fix wrong format of <code>orderQueryToken</code>.</li>
+<li>Use “CNY” in <code>ProductDescription</code> metadata.</li>
+<li>Return <code>purchaseInfo</code> details when Purchase fails, through JSON dictionary returned by <code>IUnityChannelExtensions.GetLastPurchaseError()</code>: <code>{ &quot;error&quot;: &quot;ProductUnavailable&quot;, &quot;purchaseInfo&quot;: {&quot;gameOrderId&quot;: &quot;the-id&quot;, &quot;productCode&quot;: &quot;the-code&quot;, &quot;orderQueryToken&quot;: &quot;the-token&quot;} }</code></li>
+<li>Support local receipt validation (demonstrated in <code>IAPDemo.cs</code>)<ul>
+<li>New <code>Unity Channel Public Key</code> field in <code>Receipt Validation Obfuscator</code> window.<img src="/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/Obfuscator.png" alt="Obfuscator.png" title=""></li>
+<li>Support UnityChannel tangled Public Key data in <code>CrossPlatformValidator</code> API.</li>
+<li>New <code>UnityChannelReceipt</code> class returned by validator containing all data from receipt server.</li>
+<li>Support simple receipt validation with new <code>bool IUnityChannelConfiguration.fetchReceiptPayloadOnPurchase</code> API to call the receipt validation REST API during purchasing returned to ProcessPurchase. Populate Unity IAP <code>Product.receipt</code> JSON “Payload” field with data <code>(“signature”, “signData”)</code> needed by <code>CrossPlatformValidator</code>. If error during REST call, Product will still call ProcessPurchase but “Payload” JSON will include <code>error</code> field.</li>
+</ul>
+</li>
 </ul>
 <h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
-<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7.unitypackage" title="Unity Package">Unity Package</a> (Demo inlcuded)</li>
-<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
-<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+<li><a href="/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/unity-sdk-for-xiaomi-alpha-v0.0.8.unitypackage" title="Unity Package">Unity Package</a> (Demo inlcuded)</li>
+<li><a href="/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/unity-sdk-for-xiaomi-alpha-v0.0.8-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/06/09/unity-sdk-for-xiaomi-alpha-v0.0.8/unity-sdk-for-xiaomi-alpha-v0.0.8-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
 </li>
 </ul>
 <h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
@@ -380,7 +383,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/channel/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/channel/">1</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/channel/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/13/">13</a><a class="extend next" rel="next" href="/channel/page/8/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/channel/page/6/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/channel/">1</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/channel/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/14/">14</a><a class="extend next" rel="next" href="/channel/page/8/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -425,7 +428,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/channel/">
-                <span class="site-state-item-count">13</span>
+                <span class="site-state-item-count">14</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>

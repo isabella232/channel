@@ -1,0 +1,1071 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/channel/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/channel/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/channel/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Unity, IAP, UnityChannel, XIAOMI" />
+
+
+
+
+
+  <link rel="alternate" href="/channel/atom.xml" title="Unity SDK for XIAOMI (IAP + Ads)" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/channel/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="OverviewWhat is Stand-alone Xiaomi SDKUnity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and j">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Unity SDK for XIAOMI (IAP + Ads)">
+<meta property="og:url" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/index.html">
+<meta property="og:site_name" content="Unity SDK for XIAOMI (IAP + Ads)">
+<meta property="og:description" content="OverviewWhat is Stand-alone Xiaomi SDKUnity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and j">
+<meta property="og:image" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/images/image15.png">
+<meta property="og:image" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/images/image5.png">
+<meta property="og:updated_time" content="2017-07-17T10:07:32.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Unity SDK for XIAOMI (IAP + Ads)">
+<meta name="twitter:description" content="OverviewWhat is Stand-alone Xiaomi SDKUnity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and j">
+<meta name="twitter:image" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/images/image15.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/channel/',
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/"/>
+
+
+
+
+
+  <title>
+  
+
+  
+     | Unity SDK for XIAOMI (IAP + Ads)
+  
+</title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-90587889-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left  ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/channel/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Unity SDK for XIAOMI (IAP + Ads)</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/channel/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-builds">
+          <a href="/channel/builds" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Builds
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+  <header class="post-header">
+
+	<h1 class="post-title" itemprop="name headline"></h1>
+
+
+
+</header>
+
+    
+    
+      <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><h2 id="What-is-Stand-alone-Xiaomi-SDK"><a href="#What-is-Stand-alone-Xiaomi-SDK" class="headerlink" title="What is Stand-alone Xiaomi SDK"></a>What is Stand-alone Xiaomi SDK</h2><p>Unity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and just include Xiaomi Store SDK.</p>
+<p>If developers only need to publish their games to Xiaomi Store, this SDK will suffice.</p>
+<h2 id="Process-of-Using-Stand-alone-Xiaomi-SDK"><a href="#Process-of-Using-Stand-alone-Xiaomi-SDK" class="headerlink" title="Process of Using Stand-alone Xiaomi SDK"></a>Process of Using Stand-alone Xiaomi SDK</h2><ul>
+<li>Technical Integration<ul>
+<li><a href="#onboarding-to-unity">Onboarding to Unity</a>, which requires Xiaomi app info (appId, appKey, etc.).</li>
+<li><a href="#prepare-debug-file-for-xiaomi">Prepare debug file for Xiaomi</a>.</li>
+<li><a href="#server-side-integration">Server side integration</a>.</li>
+<li><a href="#client-side-integration">Client side integration</a>.</li>
+</ul>
+</li>
+<li>Build and submit the APKs.</li>
+</ul>
+<h2 id="Technical-Integration"><a href="#Technical-Integration" class="headerlink" title="Technical Integration"></a>Technical Integration</h2><h3 id="Onboarding-to-Unity"><a href="#Onboarding-to-Unity" class="headerlink" title="Onboarding to Unity"></a><a name="onboarding-to-unity">Onboarding to Unity</a></h3><p>Before integration can start, Game developer first needs to onboard to Unity IAP and will obtain the following developer credentials (these keys are binding to the project and bundle id):</p>
+<ul>
+<li>Unity Client Id</li>
+<li>Unity Client Key</li>
+<li>Unity Client Secret</li>
+<li>Unity Client RSA Public Key</li>
+</ul>
+<p>Meanwhile, Game needs to provide the appId, appKey and appSecret offered by Xiaomi, and a callback URL of the Game server (if there exists one) to receive order status update.<br>Before going live, Game developer will also need to whitelist Unity IAP’s production server.<br>If Game developer works with Unity 5.6.1 or newer version, he can do the onboarding himself with the latest Unity IAP SDK for Xiaomi by following steps:<br>(Note: The organization owner is allowed to generate/update Unity Client and user/manager can only read exited Unity Client information. Setting the Test Mode is allowed for everyone.)</p>
+<ol>
+<li>Import stand-alone Xiaomi SDK (https://unitytech.github.io/channel)</li>
+<li><p>Open the onbording Inspector: click the AppStoreSettings.asset at UnityChannel/XiaomiSupport/Resources.<br><img src="images/image15.png" alt=""><br>If the current Unity Project has owned one project ID (if not, please create one project ID first), the Inspector will show the information for onboarding.<br><img src="images/image5.png" alt=""></p>
+</li>
+<li><p>To generate one Unity Client, Game developer can click <code>Generate Unity Client</code> and get the related Unity Client information. For this step, the callback url and the Xiaomi app information (appId, appKey, appSecret) is not necessary. The callback url and Xiaomi app information can be provided by later updating by clicking <code>Save All Settings</code>. Meanwhile, when switching Test(Debug) Mode for application, <code>Save All Settings</code> is also needed to be clicked to save the choice.</p>
+</li>
+</ol>
+<p>If the current Unity Project has already onboarded, the existed Unity Client will be loaded at this step.</p>
+<p>Game developer can use <code>Copy to Clipboard</code> to copy Unity Client Id, Unity Client Key, Unity Client Secret, Unity Client RSA Public Key to clipboard if he wants to store this information by himself. And he can click <code>Update Client Secret</code> to change Unity Client Secret to a new one.</p>
+<p>Note: </p>
+<ol>
+<li>Unity Client Secret (as well as callback url and Xiaomi appSecret) is not used in the application, hence it will not be stored in the asset and built into application, It is only handled in memory.</li>
+<li>Most operation for onboarding (generating/loading/updating Unity Client) will send networked request to Unity backend server. You can check the log information shown in Console to have an idea of the progress of the operation.</li>
+</ol>
+<h3 id="Prepare-debug-file-for-Xiaomi"><a href="#Prepare-debug-file-for-Xiaomi" class="headerlink" title="Prepare debug file for Xiaomi"></a><a name="prepare-debug-file-for-xiaomi">Prepare debug file for Xiaomi</a></h3><p>If you want to debug your purchase app, you must have a <code>MiProductCatalog.prop</code> file to tell Xiaomi SDK what products can be used under mode.<br><a href="MiProductCatalog.unitypackage">Here</a> is an example <code>MiProductCatalog.prop</code> file. The prices must be in line with <a href="#xiaomi-price-tiers">Xiaomi price tiers</a>.</p>
+<h3 id="Server-Side-Integration"><a href="#Server-Side-Integration" class="headerlink" title="Server Side Integration"></a><a name="server-side-integration">Server Side Integration</a></h3><p>Please see the doc of Unity SDK for Xiaomi.</p>
+<h3 id="Client-Side-Integration"><a href="#Client-Side-Integration" class="headerlink" title="Client Side Integration"></a><a name="client-side-integration">Client Side Integration</a></h3><h4 id="Initialization"><a href="#Initialization" class="headerlink" title="Initialization"></a>Initialization</h4><p>Please make sure initialization is called in <code>Awake()</code> or <code>Start()</code>.<br>First, you need to implement <code>ILoginListener</code>:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">private</span> <span class="keyword">class</span> <span class="title">MyLoginListener</span> : <span class="title">ILoginListener</span></div><div class="line">&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnLogin</span>(<span class="params">UserInfo userInfo</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="keyword">string</span>.Format(<span class="string">"Login Succeed: userId &#123;0&#125;, userLoginToken &#123;1&#125;, channel &#123;2&#125;"</span>,</div><div class="line">            userInfo.userId, userInfo.userLoginToken, userInfo.channel));</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnInitialized</span>(<span class="params"></span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Initialize Succeed"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnInitializeFailed</span>(<span class="params"><span class="keyword">string</span> message</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Initialize Failed "</span> + message);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnLoginFailed</span>(<span class="params"><span class="keyword">string</span> message</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Login Failed: "</span> + message);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Then, if you are using <code>App Store Settings</code>(Unity 5.6.1+), you can initialize like this:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.Store;</div><div class="line">......</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Awake</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">var</span> myLoginListener = <span class="keyword">new</span> MyLoginListener();</div><div class="line">    AppStoreSettings appStoreSettings = Resources.Load&lt;AppStoreSettings&gt;(<span class="string">"AppStoreSettings"</span>);</div><div class="line">    StoreService.Initialize(appStoreSettings.getAppInfo(), myLoginListener);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Otherwise, you can initialize like this:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.Store;</div><div class="line">......</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">void</span> <span class="title">Awake</span>(<span class="params"></span>)</span></div><div class="line">&#123;</div><div class="line">    <span class="keyword">var</span> myLoginListener = <span class="keyword">new</span> MyLoginListener();</div><div class="line">    <span class="keyword">var</span> appInfo = <span class="keyword">new</span> AppInfo();</div><div class="line"></div><div class="line">    appInfo.appId = <span class="string">"YOUR APP ID"</span>;</div><div class="line">    appInfo.appKey = <span class="string">"YOUR APP KEY"</span>;</div><div class="line">    appInfo.clientId = <span class="string">"YOUR CLIENT ID"</span>;</div><div class="line">    appInfo.clientKey = <span class="string">"YOUR CLIENT KEY"</span>;</div><div class="line">    appInfo.debug = <span class="literal">false</span>; <span class="comment">// debug mode or not</span></div><div class="line">    StoreService.Initialize(appInfo, myLoginListener);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>These info can be obtained when developers have <a href="#onboarding-to-unity">onboarded the app</a></p>
+</blockquote>
+<h4 id="Login"><a href="#Login" class="headerlink" title="Login"></a>Login</h4><p>Login is just a simple statment:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.Store;</div><div class="line">......</div><div class="line"></div><div class="line">StoreService.Login(myLoginListener);</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>Sometimes users can not login using Xiaomi SDK, that maybe because there is no product configured for IAP on Xiaomi portal.</p>
+</blockquote>
+<h4 id="Purchase"><a href="#Purchase" class="headerlink" title="Purchase"></a>Purchase</h4><p>First, <code>IPurchaseListener</code> needs to be implemented.<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.ChannelPurchase;</div><div class="line">......</div><div class="line"></div><div class="line"><span class="keyword">private</span> <span class="keyword">class</span> <span class="title">MyPurchaseListener</span> : <span class="title">IPurchaseListener</span></div><div class="line">&#123;</div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnPurchase</span>(<span class="params">PurchaseInfo purchaseInfo</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Purchase Succeed: "</span> + purchaseInfo.gameOrderId);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnPurchaseFailed</span>(<span class="params"><span class="keyword">string</span> message, PurchaseInfo purchaseInfo</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Purchase Failed: "</span> + message);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnPurchaseRepeated</span>(<span class="params"><span class="keyword">string</span> productCode</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Purchase Repeated"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnReceiptValidate</span>(<span class="params">ReceiptInfo receiptInfo</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Validate Succeed"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnReceiptValidateFailed</span>(<span class="params"><span class="keyword">string</span> gameOrderId, <span class="keyword">string</span> message</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Validate Failed"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnPurchaseConfirm</span>(<span class="params"><span class="keyword">string</span> gameOrderId</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Confirm Succeed"</span>);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">OnPurchaseConfirmFailed</span>(<span class="params"><span class="keyword">string</span> gameOrderId, <span class="keyword">string</span> message</span>)</span></div><div class="line">    &#123;</div><div class="line">        Debug.Log(<span class="string">"Confirm Failed"</span>);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>Then call <code>Purchase</code> method.</p>
+<figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.ChannelPurchase;</div><div class="line">......</div><div class="line"></div><div class="line">PurchaseService.Purchase(<span class="string">"Product ID"</span>, <span class="string">"Game Order ID"</span>, myPurchaseListener);</div></pre></td></tr></table></figure>
+<blockquote>
+<ul>
+<li><code>Product ID</code> is configured on Xiaomi Dev Portal. If the app is run in debug mode, the <code>Prodcut ID</code> should exist in <code>MiProductCatalog.prop</code> file.</li>
+<li><code>Game Order ID</code> can be null and our SDK will generate and UUID for it.</li>
+</ul>
+</blockquote>
+<h4 id="Purchase-Validation"><a href="#Purchase-Validation" class="headerlink" title="Purchase Validation"></a>Purchase Validation</h4><p>After one purchase is finished, developers can validate the purchase by calling the <code>ValidateReceipt</code> API:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.ChannelPurchase;</div><div class="line">......</div><div class="line"></div><div class="line">PurchaseService.ValidateReceipt(gameOrderId, myPurchaseListener);</div></pre></td></tr></table></figure></p>
+<p>if <code>gameOrderId</code> is valid, developers can get a <code>ReceiptInfo</code> in the <code>myPurchaseListener</code>. <code>ReceiptInfo</code> contains <code>signData</code> and <code>signature</code> which can be used to validate the purchase. If the game has a server, this is usually validated on the server, please refer to the <a href="https://unitytech.github.io/channel/server-sample-code/">server sample code</a>. Developers can also validate the <code>signData</code> on the client side. The procedure can be very similar to the server side validation.</p>
+<h1 id="Appendices"><a href="#Appendices" class="headerlink" title="Appendices"></a>Appendices</h1><h2 id="Xiaomi-Price-Tiers"><a href="#Xiaomi-Price-Tiers" class="headerlink" title="Xiaomi Price Tiers"></a>Xiaomi Price Tiers</h2><p>Note that in <code>MiProductCatalog.prop</code>, the unit of price is 1/100 of Chinese Yuan.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Tier</th>
+<th style="text-align:right">Price in RMB</th>
+<th style="text-align:left">Tier</th>
+<th style="text-align:right">Price in RMB</th>
+<th style="text-align:left">Tier</th>
+<th style="text-align:right">Price in RMB</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Tier 1</td>
+<td style="text-align:right">￥1.00</td>
+<td style="text-align:left">Tier 2</td>
+<td style="text-align:right">￥3.00</td>
+<td style="text-align:left">Tier 3</td>
+<td style="text-align:right">￥6.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 4</td>
+<td style="text-align:right">￥8.00</td>
+<td style="text-align:left">Tier 5</td>
+<td style="text-align:right">￥12.00</td>
+<td style="text-align:left">Tier 6</td>
+<td style="text-align:right">￥18.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 7</td>
+<td style="text-align:right">￥25.00</td>
+<td style="text-align:left">Tier 8</td>
+<td style="text-align:right">￥28.00</td>
+<td style="text-align:left">Tier 9</td>
+<td style="text-align:right">￥30.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 10</td>
+<td style="text-align:right">￥40.00</td>
+<td style="text-align:left">Tier 11</td>
+<td style="text-align:right">￥45.00</td>
+<td style="text-align:left">Tier 12</td>
+<td style="text-align:right">￥50.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 13</td>
+<td style="text-align:right">￥60.00</td>
+<td style="text-align:left">Tier 14</td>
+<td style="text-align:right">￥68.00</td>
+<td style="text-align:left">Tier 15</td>
+<td style="text-align:right">￥73.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 16</td>
+<td style="text-align:right">￥78.00</td>
+<td style="text-align:left">Tier 17</td>
+<td style="text-align:right">￥88.00</td>
+<td style="text-align:left">Tier 18</td>
+<td style="text-align:right">￥93.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 19</td>
+<td style="text-align:right">￥98.00</td>
+<td style="text-align:left">Tier 20</td>
+<td style="text-align:right">￥108.00</td>
+<td style="text-align:left">Tier 21</td>
+<td style="text-align:right">￥113.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 22</td>
+<td style="text-align:right">￥118.00</td>
+<td style="text-align:left">Tier 23</td>
+<td style="text-align:right">￥123.00</td>
+<td style="text-align:left">Tier 24</td>
+<td style="text-align:right">￥128.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 25</td>
+<td style="text-align:right">￥138.00</td>
+<td style="text-align:left">Tier 26</td>
+<td style="text-align:right">￥148.00</td>
+<td style="text-align:left">Tier 27</td>
+<td style="text-align:right">￥153.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 28</td>
+<td style="text-align:right">￥158.00</td>
+<td style="text-align:left">Tier 29</td>
+<td style="text-align:right">￥163.00</td>
+<td style="text-align:left">Tier 30</td>
+<td style="text-align:right">￥168.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 31</td>
+<td style="text-align:right">￥178.00</td>
+<td style="text-align:left">Tier 32</td>
+<td style="text-align:right">￥188.00</td>
+<td style="text-align:left">Tier 33</td>
+<td style="text-align:right">￥193.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 34</td>
+<td style="text-align:right">￥198.00</td>
+<td style="text-align:left">Tier 35</td>
+<td style="text-align:right">￥208.00</td>
+<td style="text-align:left">Tier 36</td>
+<td style="text-align:right">￥218.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 37</td>
+<td style="text-align:right">￥223.00</td>
+<td style="text-align:left">Tier 38</td>
+<td style="text-align:right">￥228.00</td>
+<td style="text-align:left">Tier 39</td>
+<td style="text-align:right">￥233.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 40</td>
+<td style="text-align:right">￥238.00</td>
+<td style="text-align:left">Tier 41</td>
+<td style="text-align:right">￥243.00</td>
+<td style="text-align:left">Tier 42</td>
+<td style="text-align:right">￥248.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 43</td>
+<td style="text-align:right">￥253.00</td>
+<td style="text-align:left">Tier 44</td>
+<td style="text-align:right">￥258.00</td>
+<td style="text-align:left">Tier 45</td>
+<td style="text-align:right">￥263.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 46</td>
+<td style="text-align:right">￥268.00</td>
+<td style="text-align:left">Tier 47</td>
+<td style="text-align:right">￥273.00</td>
+<td style="text-align:left">Tier 48</td>
+<td style="text-align:right">￥278.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 49</td>
+<td style="text-align:right">￥283.00</td>
+<td style="text-align:left">Tier 50</td>
+<td style="text-align:right">￥288.00</td>
+<td style="text-align:left">Tier 51</td>
+<td style="text-align:right">￥298.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 52</td>
+<td style="text-align:right">￥308.00</td>
+<td style="text-align:left">Tier 53</td>
+<td style="text-align:right">￥318.00</td>
+<td style="text-align:left">Tier 54</td>
+<td style="text-align:right">￥328.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 55</td>
+<td style="text-align:right">￥348.00</td>
+<td style="text-align:left">Tier 56</td>
+<td style="text-align:right">￥388.00</td>
+<td style="text-align:left">Tier 57</td>
+<td style="text-align:right">￥418.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 58</td>
+<td style="text-align:right">￥448.00</td>
+<td style="text-align:left">Tier 59</td>
+<td style="text-align:right">￥488.00</td>
+<td style="text-align:left">Tier 60</td>
+<td style="text-align:right">￥518.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 61</td>
+<td style="text-align:right">￥548.00</td>
+<td style="text-align:left">Tier 62</td>
+<td style="text-align:right">￥588.00</td>
+<td style="text-align:left">Tier 63</td>
+<td style="text-align:right">￥618.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 64</td>
+<td style="text-align:right">￥648.00</td>
+<td style="text-align:left">Tier 65</td>
+<td style="text-align:right">￥698.00</td>
+<td style="text-align:left">Tier 66</td>
+<td style="text-align:right">￥798.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 67</td>
+<td style="text-align:right">￥818.00</td>
+<td style="text-align:left">Tier 68</td>
+<td style="text-align:right">￥848.00</td>
+<td style="text-align:left">Tier 69</td>
+<td style="text-align:right">￥898.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 70</td>
+<td style="text-align:right">￥998.00</td>
+<td style="text-align:left">Tier 71</td>
+<td style="text-align:right">￥1048.00</td>
+<td style="text-align:left">Tier 72</td>
+<td style="text-align:right">￥1098.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 73</td>
+<td style="text-align:right">￥1148.00</td>
+<td style="text-align:left">Tier 74</td>
+<td style="text-align:right">￥1198.00</td>
+<td style="text-align:left">Tier 75</td>
+<td style="text-align:right">￥1248.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 76</td>
+<td style="text-align:right">￥1298.00</td>
+<td style="text-align:left">Tier 77</td>
+<td style="text-align:right">￥1398.00</td>
+<td style="text-align:left">Tier 78</td>
+<td style="text-align:right">￥1448.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 79</td>
+<td style="text-align:right">￥1498.00</td>
+<td style="text-align:left">Tier 80</td>
+<td style="text-align:right">￥1598.00</td>
+<td style="text-align:left">Tier 81</td>
+<td style="text-align:right">￥1648.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 82</td>
+<td style="text-align:right">￥1998.00</td>
+<td style="text-align:left">Tier 83</td>
+<td style="text-align:right">￥2298.00</td>
+<td style="text-align:left">Tier 84</td>
+<td style="text-align:right">￥2598.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 85</td>
+<td style="text-align:right">￥2998.00</td>
+<td style="text-align:left">Tier 86</td>
+<td style="text-align:right">￥3298.00</td>
+<td style="text-align:left">Tier 87</td>
+<td style="text-align:right">￥3998.00</td>
+</tr>
+<tr>
+<td style="text-align:left">Tier 88</td>
+<td style="text-align:right">￥4498.00</td>
+<td style="text-align:left">Tier 89</td>
+<td style="text-align:right">￥4998.00</td>
+<td style="text-align:left">Tier 90</td>
+<td style="text-align:right">￥5898.00</td>
+</tr>
+</tbody>
+</table>
+<h2 id="API-References"><a href="#API-References" class="headerlink" title="API References"></a>API References</h2><h3 id="Namespace-UnityEngine-Store"><a href="#Namespace-UnityEngine-Store" class="headerlink" title="Namespace UnityEngine.Store"></a>Namespace <code>UnityEngine.Store</code></h3><h4 id="Class-AppInfo"><a href="#Class-AppInfo" class="headerlink" title="Class AppInfo"></a>Class <code>AppInfo</code></h4><p>Variables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">appId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Xiaomi app id</td>
+</tr>
+<tr>
+<td style="text-align:left">appKey</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Xiaomi app key</td>
+</tr>
+<tr>
+<td style="text-align:left">clientId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Unity client id</td>
+</tr>
+<tr>
+<td style="text-align:left">clientKey</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Unity client key</td>
+</tr>
+<tr>
+<td style="text-align:left">debug</td>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">Determine whether the app is run under debug mode</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Interface-ILoginListener"><a href="#Interface-ILoginListener" class="headerlink" title="Interface ILoginListener"></a>Interface <code>ILoginListener</code></h4><p>Functions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Return Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">OnInitialized()</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when initialization succeeds</td>
+</tr>
+<tr>
+<td style="text-align:left">OnInitializedFailed(string message)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when initialization fails</td>
+</tr>
+<tr>
+<td style="text-align:left">OnLogin()</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when login succeeds</td>
+</tr>
+<tr>
+<td style="text-align:left">OnLoginFailed(string message)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when login fails</td>
+</tr>
+</tbody>
+</table>
+<h4 id="class-StoreService"><a href="#class-StoreService" class="headerlink" title="class StoreService"></a>class <code>StoreService</code></h4><p>Functions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Return Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">static Initialize(AppInfo appInfo, ILoginListener listener)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Initialize the SDK</td>
+</tr>
+<tr>
+<td style="text-align:left">static Login(ILoginListener listener)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Login to the Xiaomi account</td>
+</tr>
+</tbody>
+</table>
+<h4 id="class-UserInfo"><a href="#class-UserInfo" class="headerlink" title="class UserInfo"></a>class <code>UserInfo</code></h4><p>Variables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">channel</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Indicate which channel the developer are using, for now, it will only be <code>XIAOMI</code></td>
+</tr>
+<tr>
+<td style="text-align:left">userId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Channel’s unique user id</td>
+</tr>
+<tr>
+<td style="text-align:left">userLoginToken</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Can be used to validate the user login. See <a href="#server-side-integration">server side integration</a> for detail</td>
+</tr>
+</tbody>
+</table>
+<h3 id="Namespace-UnityEngine-ChannelPurchase"><a href="#Namespace-UnityEngine-ChannelPurchase" class="headerlink" title="Namespace UnityEngine.ChannelPurchase"></a>Namespace <code>UnityEngine.ChannelPurchase</code></h3><h4 id="Class-PurchaseInfo"><a href="#Class-PurchaseInfo" class="headerlink" title="Class PurchaseInfo"></a>Class <code>PurchaseInfo</code></h4><p>Variables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">productCode</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The product id. For Xiaomi, developers can configure the product id on Xiaomi Dev Portal</td>
+</tr>
+<tr>
+<td style="text-align:left">gameOrderId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The order id of the purchase</td>
+</tr>
+<tr>
+<td style="text-align:left">orderQueryToken</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">Can be used to validate the purchase. See <a href="#server-side-integration">server side integration</a> for detail</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Class-ReceiptInfo"><a href="#Class-ReceiptInfo" class="headerlink" title="Class ReceiptInfo"></a>Class <code>ReceiptInfo</code></h4><p>Variables:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">gameOrderId</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The order id of the purchase</td>
+</tr>
+<tr>
+<td style="text-align:left">signData</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">A JSON string which contains details of the purchase</td>
+</tr>
+<tr>
+<td style="text-align:left">signature</td>
+<td style="text-align:left">string</td>
+<td style="text-align:left">The signature of signData.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="Interface-IPurchaseListener"><a href="#Interface-IPurchaseListener" class="headerlink" title="Interface IPurchaseListener"></a>Interface <code>IPurchaseListener</code></h4><p>Functions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Return Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">OnPurchase</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when the purchase succeeds</td>
+</tr>
+<tr>
+<td style="text-align:left">OnPurchaseFailed(string message, PurchaseInfo purchaseInfo)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when the purchase fails</td>
+</tr>
+<tr>
+<td style="text-align:left">OnPurchaseRepeated(string productCode)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when non-consumable products are purchased the second time</td>
+</tr>
+<tr>
+<td style="text-align:left">OnReceiptValidate(ReceiptInfo receiptInfo)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when <code>PurchaseService.ValidateReceipt(...)</code> succeeds</td>
+</tr>
+<tr>
+<td style="text-align:left">OnReceiptValidateFailed(string gameOrderId, string message)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Called when <code>PurchaseService.ValidateReceipt(...)</code> fails</td>
+</tr>
+<tr>
+<td style="text-align:left">OnPurchaseConfirm(string gameOrderId)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left"><em>deprecated</em></td>
+</tr>
+<tr>
+<td style="text-align:left">OnPurchaseConfirmFailed(string gameOrderId, string message)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left"><em>deprecated</em></td>
+</tr>
+</tbody>
+</table>
+<h4 id="Class-PurchaseService"><a href="#Class-PurchaseService" class="headerlink" title="Class PurchaseService"></a>Class <code>PurchaseService</code></h4><p>Functions:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Key</th>
+<th style="text-align:left">Return Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">static Purchase(string productCode, string gameOrderId, IPurchaseListener listener)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Purchase products</td>
+</tr>
+<tr>
+<td style="text-align:left">static ValidateReceipt(string gameOrderId, IPurchaseListener listener)</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left">Validate purchase</td>
+</tr>
+<tr>
+<td style="text-align:left">static ConfirmPurchase</td>
+<td style="text-align:left">void</td>
+<td style="text-align:left"><em>deprecated</em> Please use <code>ValidateReceipt</code> instead</td>
+</tr>
+</tbody>
+</table>
+
+    
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="https://pbs.twimg.com/profile_images/519835279431987201/1PbQpCce.jpeg"
+               alt="Unity Technology" />
+          <p class="site-author-name" itemprop="name">Unity Technology</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/channel/">
+                <span class="site-state-item-count">14</span>
+                <span class="site-state-item-name">posts</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/channel/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+          <div class="feed-link motion-element">
+            <a href="/channel/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Unity Technology</span>
+</div>
+
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/channel/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/channel/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/channel/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/channel/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/channel/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
