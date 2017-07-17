@@ -97,7 +97,7 @@
 <meta property="og:description" content="OverviewWhat is Stand-alone Xiaomi SDKUnity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and j">
 <meta property="og:image" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/images/image15.png">
 <meta property="og:image" content="https://unitytech.github.io/channel/stand-alone-xiaomi-sdk-doc/images/image5.png">
-<meta property="og:updated_time" content="2017-07-17T10:07:32.000Z">
+<meta property="og:updated_time" content="2017-07-17T10:16:30.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Unity SDK for XIAOMI (IAP + Ads)">
 <meta name="twitter:description" content="OverviewWhat is Stand-alone Xiaomi SDKUnity SDK for Xiaomi integrates Xiaomi store to Unity IAP, which includes Amazon, Google Play, etc. The stand-alone Xiaomi SDK isn’t integrated to Unity IAP and j">
@@ -317,7 +317,7 @@
 </blockquote>
 <h4 id="Purchase-Validation"><a href="#Purchase-Validation" class="headerlink" title="Purchase Validation"></a>Purchase Validation</h4><p>After one purchase is finished, developers can validate the purchase by calling the <code>ValidateReceipt</code> API:<br><figure class="highlight csharp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">using</span> UnityEngine.ChannelPurchase;</div><div class="line">......</div><div class="line"></div><div class="line">PurchaseService.ValidateReceipt(gameOrderId, myPurchaseListener);</div></pre></td></tr></table></figure></p>
 <p>if <code>gameOrderId</code> is valid, developers can get a <code>ReceiptInfo</code> in the <code>myPurchaseListener</code>. <code>ReceiptInfo</code> contains <code>signData</code> and <code>signature</code> which can be used to validate the purchase. If the game has a server, this is usually validated on the server, please refer to the <a href="https://unitytech.github.io/channel/server-sample-code/">server sample code</a>. Developers can also validate the <code>signData</code> on the client side. The procedure can be very similar to the server side validation.</p>
-<h1 id="Appendices"><a href="#Appendices" class="headerlink" title="Appendices"></a>Appendices</h1><h2 id="Xiaomi-Price-Tiers"><a href="#Xiaomi-Price-Tiers" class="headerlink" title="Xiaomi Price Tiers"></a>Xiaomi Price Tiers</h2><p>Note that in <code>MiProductCatalog.prop</code>, the unit of price is 1/100 of Chinese Yuan.</p>
+<h1 id="Appendices"><a href="#Appendices" class="headerlink" title="Appendices"></a>Appendices</h1><h2 id="Xiaomi-Price-Tiers"><a href="#Xiaomi-Price-Tiers" class="headerlink" title="Xiaomi Price Tiers"></a><a name="xiaomi-price-tiers">Xiaomi Price Tiers</a></h2><p>Note that in <code>MiProductCatalog.prop</code>, the unit of price is 1/100 of Chinese Yuan.</p>
 <table>
 <thead>
 <tr>
