@@ -248,7 +248,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/">
+    <link itemprop="mainEntityOfPage" href="https://unitytech.github.io/channel/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Unity Technology">
@@ -270,8 +270,8 @@
             
               
                 
-                <a class="post-title-link" href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/" itemprop="url">
-                  Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.6
+                <a class="post-title-link" href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/" itemprop="url">
+                  Unity SDK for XIAOMI (IAP + Ads) Alpha v0.0.7
                 </a>
               
             
@@ -287,8 +287,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-05-26T17:08:36+08:00">
-                2017-05-26
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-06-05T14:46:26+08:00">
+                2017-06-05
               </time>
             
 
@@ -325,26 +325,20 @@
       
         
           
-            <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.6 build.</p>
+            <p>Unity SDK for XIAOMI provides an easy way to intergrate with XIAOMI’s IAP and Unity Ads in Unity editor. This is the Alpha v0.0.7 build.</p>
+<p><span style="color:red"> When prompted to update Unity IAP, DO NOT update. </span></p>
 <h3 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h3><ul>
-<li>Support Unity 5.3 and 5.4 users discerning “repeat” purchases from real purchase failures with new <code>string IUnityChannelExtensions.GetLastPurchaseError()</code> API. See <code>IAPDemo.cs</code> for example.</li>
-<li>Use IAP Catalog for IAP metadata instead of returning 0.00 for price, and empty title &amp; description. </li>
-<li>Fix products reporting as ‘unavailable for purchase’ when Store ID Overrides was used for XiaomiMiPay.</li>
-<li>Add zh_CN to Locale list for Xiaomi. Can either use this locale as default or as translation with the (+) button to the right of Translation<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/Locale.png" alt="Locale.png" title=""></li>
-<li>Display Xiaomi MiPay Catalog export confirmation dialog when “Saved”.<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/Catalog.png" alt="Catalog.png" title=""></li>
-<li>Add Price Tiers for Xiaomi to IAP Catalog GUI (Price Tier 0 won’t work under debug mode).<img src="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/PriceTier.png" alt="PriceTier.png" title="">
-</li>
+<li>Fix thread problem under Unity 5.3.</li>
+<li>Fix IAP Catalog hiding error sections in Product editor GUI.</li>
+<li>Fix MiProductCatalog.prop not appearing after successfully generating (refresh).</li>
+<li>Catalog GUI supports expanding foldouts (headers) when clicking on foldout names to expand on Unity 5.5+. </li>
+<li>Show default label for new product instructing user to populate ID. </li>
+<li>More log details.</li>
 </ul>
 <h3 id="Downloads"><a href="#Downloads" class="headerlink" title="Downloads"></a>Downloads</h3><ul>
-<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6.unitypackage" title="Unity Package (Unity 5.4+)">Unity Package (Unity 5.4+)</a></li>
-<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6(Unity5.3).unitypackage" title="Unity Package (Unity 5.3+)">Unity Package (Unity 5.3+)</a>
-</li>
-</ul>
-<blockquote><p><code>Unity Package (Unity 5.4+)</code> works for Unity 5.4+ whether <code>Development Build</code> is toggled.<br><code>Unity Package (Unity 5.3+)</code> works for Unity 5.3+ but doesn’t work under <code>Development Build</code>.</p>
-</blockquote>
-<ul>
-<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
-<li><a href="/channel/2017/05/26/unity-sdk-for-xiaomi-alpha-v0.0.6/unity-sdk-for-xiaomi-alpha-v0.0.6-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7.unitypackage" title="Unity Package">Unity Package</a> (Demo inlcuded)</li>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-iap-guide.pdf" title="IAP Doc">IAP Doc</a></li>
+<li><a href="/channel/2017/06/05/unity-sdk-for-xiaomi-alpha-v0.0.7/unity-sdk-for-xiaomi-alpha-v0.0.7-ads-guide.pdf" title="Ads Doc">Ads Doc</a>
 </li>
 </ul>
 <h3 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h3><p>If you have any question, feel free to contact us at <a href="mailto:iapsupport@unity3d.com" target="_blank" rel="external">iapsupport@unity3d.com</a> for IAP and <a href="maito:chinaads@unity3d.com" target="_blank" rel="external">chinaads@unity3d.com</a> for Ads.</p>
@@ -386,7 +380,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/channel/page/9/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/channel/">1</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/channel/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/15/">15</a><a class="extend next" rel="next" href="/channel/page/11/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/channel/page/9/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/channel/">1</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/9/">9</a><span class="page-number current">10</span><a class="page-number" href="/channel/page/11/">11</a><span class="space">&hellip;</span><a class="page-number" href="/channel/page/16/">16</a><a class="extend next" rel="next" href="/channel/page/11/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -431,7 +425,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/channel/">
-                <span class="site-state-item-count">15</span>
+                <span class="site-state-item-count">16</span>
                 <span class="site-state-item-name">posts</span>
               </a>
             </div>
